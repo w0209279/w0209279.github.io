@@ -1,0 +1,212 @@
+
+:root{
+    --main-color-mobile: #006400;
+    --main-color-tablet: #8A0303;
+    --main-color-desktop: #191770;
+    --second-color: #D12A00;
+    --third-color: #A7D100;
+    --font-color-moblie:#B2BEB5;
+    --font-color-tablet:#c0c0c0;
+    --font-color-desktop:#d3d3d3;
+    }
+    
+header{
+    background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 25px,
+    black 150px)
+  }
+body {
+  background-color: var(--main-color-mobile); 
+  max-width: 98%;
+  margin: auto;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  }
+h1,h2,h3,h4 {
+  font-family: "Press Start 2P", sans-serif;
+  color: var(--third-color);
+  }
+.rainbow {
+  animation: rotate-color 100s infinite;
+}
+@keyframes rotate-color {
+  0% {
+    background-color: darkblue;
+  }
+  20% {
+    background-color: darkmagenta;
+  }
+  40% {
+    background-color: crimson;
+  }
+  60% {
+    background-color: midnightblue;
+  }
+  80% {
+    background-color: #D1003E;
+  }
+  100% {
+    background-color: darkblue;
+  }
+}
+p {
+  color: var(--font-color-moblie);
+  }
+.img {
+  border: 20px solid var(--second-color);
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  }
+img {
+  max-width: 100%;
+  }
+footer{
+  background-color: var(--second-color);
+  }
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-color);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100px;
+  margin: auto;
+  align-items: center;
+  }
+.navbar a {
+  font-size: 16px;
+  color: var(--third-color);
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  }
+.navbar a:hover {
+  background-color: var(--third-color);
+  color: var(--second-color);
+  padding: 15px;
+  vertical-align: middle;
+  transition: 0.3s ease;
+  }
+.navbar a:active {
+  background-color: purple;  
+  }
+dialog {
+  background-color: gold;
+  color: magenta;
+  font-size: xx-small;
+  }
+.Resume {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 90%;
+}
+.Resume li{
+  background-color: var(--second-color);
+  color: var(--third-color);
+  border: 2px solid var(--third-color);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 150px;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex: 1 1 200px; 
+}
+
+.Skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns:1fr;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 90%;
+  margin: auto;
+  padding: 10;
+}
+
+.Skills-list li {
+  background-color: var(--second-color);
+  color: var(--third-color);
+  border: 2px solid var(--third-color);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;  
+  transition: 0.3s ease;
+}
+
+.Skills-list img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.Skills-list li:hover {
+  background-color: var(--third-color);
+  color: var(--second-color);
+  transform: scale(1.1);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+body {
+  font-size: 20px;
+  background-color: var(--main-color-tablet);
+  }
+p {
+  color: var(--font-color-tablet);
+  }
+.navbar {
+      flex-direction: row;
+      justify-content: center;
+      width: 440px;
+  }
+.navbar a {
+  display: inline-block; 
+  width: auto;
+  }
+  .Skills-list {
+  grid-template-columns:repeat(2,1fr);
+  gap: 2.5rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+body {
+  font-size: 24px;
+  background-color: var(--main-color-desktop);
+  }
+p {
+  color: var(--font-color-desktop);
+  }
+.navbar {
+  flex-direction: row;
+  justify-content: center;
+  width: 440px;
+  }
+.navbar a {
+  display: inline-block;
+  width: auto;
+  }
+  .Skills-list {
+  grid-template-columns:repeat(3,1fr);
+  gap: 3rem;
+  }
+}

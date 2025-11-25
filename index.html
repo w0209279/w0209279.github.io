@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Morgan Fraser Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<body>
+<!-- Header -->
+<header>
+<!-- Hero Section -->
+    <h1 class="rainbow">Morgan Fraser Portfolio</h1>
+    <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
+    </div>
+    <div class="img"><img src="Morgan_Head.jpg" alt="Morgan Head" width="400" height="500" > 
+    </div>
+    <h1><a href="#about">MEET MORGAN FRASER</a></h1>
+</header>
+<!-- Main -->
+<main>
+    <Section id="about">
+        <h2>About</h2>
+        <p> Dedicated professional with a strong background in digital marketing, 
+            IT/hardware configuration, and retail management, seeking a full-time position 
+            in the sector. Passionate about serving the public, I am eager to leverage my 
+            diverse skill set to enhance customer experiences, streamline operations, and 
+            drive business growth. Committed to delivering exceptional service and 
+            utilizing my technical expertise to support success.</p>
+    </Section>
+    <Section id="skills">
+    <h2>Skills</h2>
+    <!-- List of some skills -->
+        <ul class="Skills-list">
+            <li>Data Analytics<img src="Data_analytics_Logo.png" alt="Data Analytics icon"></li>
+            <li>Systems Management<img src="management.png" alt="Systems management icon"></li>
+            <li>Cyber Security<img src="cyber-security.png" alt="cyber-security icon"></li>
+            <li>Python<a href="https://www.python.org/community/logos" target="_blank"><img src="Python_Logo.png" alt="Python Logo"></a></li>            
+            <li>Powershell<a href="https://learn.microsoft.com/en-us/powershell" target="_blank"><img src="Powershell_Logo.png" alt="Powershell Logo"></a></li>            
+            <li>SQL<img src="SQL.png" alt="SQL icon"></li>
+            <li>Sales<a href="https://www.stillfireddistilleries.com" target="_blank"><img src="Still_Fired_Logo.jpg" alt="Still Fired Logo"></a></li>
+            <li>Customer Service<img src="acquisition.png" alt="Sales icon"></li>
+            <li>Website Design<a href="https://www.atlanticonline.ca" target="_blank"><img src="AOT_Logo.png" alt="AOT Logo"></a></li>
+            <li>Digital Marketing<img src="social-media.png" alt="Digital Marketing icon"></li>
+            <li>Search Engine Optimization<img src="seo.png" alt="SEO icon"></li>
+            <li>Medical First Resonder<img src="first-aid-kit.png" alt="First Aid icon"></li>
+        </ul>
+        
+    </Section>
+    <Section id="contact">
+    <h2>Contact</h2>    
+        <p>W0209279@NSCC.ca</p>
+    </Section>
+    <Section id="resume">
+    <h2>Resume</h2>
+        <ul class="Resume">
+            <li><a href="Morgan-Fraser-Resume-2024.pdf" target="_blank">Download Resume</a></li>  
+            <li><a href="https://www.linkedin.com/in/morgan-z-fraser" target="_blank">Visit linkedin</a></li>
+    </ul>
+    </section>
+</main> 
+<!-- Footer -->
+<footer>
+    © 2019 - 2025 RLS Tech |<a href="PRIVACY_POLICY.pdf" style="color: black">Privacy</a> | Website Design by RLS Tech | <button onclick="displayModal()">Contact</button><dialog id="ContactModal">Contact Morgan Fraser<br>W0209279@NSCC.CA<button style="display: block; margin: 1rem auto;" onclick="closeModal()">Close</button></dialog>
+    <script>
+    const modal = document.getElementById("ContactModal");
+    function displayModal() {
+    modal.showModal();
+    }
+    function closeModal() {
+    modal.close();
+    }
+    </script>
+</footer>
+</body>
+</html>
